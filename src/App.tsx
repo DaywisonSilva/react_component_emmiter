@@ -1,13 +1,16 @@
-import { Button, Dialog } from "./components";
-import { onShowDialog } from "./components/Dialog/events";
+import { Button, DialogContainer } from "./components";
+import { showDialog } from "./components/Dialog/events";
 import globalStyles from "./styles";
 
 function App() {
   globalStyles();
   return (
     <>
-      <Button onClick={() => onShowDialog()} label="Show" />
-      <Dialog />
+      <Button
+        onClick={() => showDialog({ image: "./image-dialog.jpg" })}
+        label="Show"
+      />
+      <DialogContainer />
     </>
   );
 }

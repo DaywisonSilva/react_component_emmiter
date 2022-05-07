@@ -1,4 +1,4 @@
 import Button from "./Button";
-import Dialog from "./Dialog";
+import DialogContainer from "./Dialog";
 
-export { Button, Dialog };
+export { Button, DialogContainer };

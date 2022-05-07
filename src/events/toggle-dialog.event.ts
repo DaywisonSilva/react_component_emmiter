@@ -1,7 +1,7 @@
 import mitt from "mitt";
 
 type DialogEvents = {
-  show: boolean;
+  show: { state: boolean; image: string };
   hide: boolean;
 };
 

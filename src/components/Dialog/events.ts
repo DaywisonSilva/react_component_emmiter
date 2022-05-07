@@ -1,11 +1,11 @@
 import toggleDialogEmmiter from "../../events/toggle-dialog.event";
 
-const onShowDialog = () => {
-  toggleDialogEmmiter.emit("show", true);
+const showDialog = ({ image }: { image: string }) => {
+  toggleDialogEmmiter.emit("show", { state: true, image });
 };
 
-const onHideDialog = () => {
+const hideDialog = () => {
   toggleDialogEmmiter.emit("hide", false);
 };
 
-export { onShowDialog, onHideDialog };
+export { showDialog, hideDialog };
